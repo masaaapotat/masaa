@@ -104,6 +104,61 @@
             height: 600px;
             width: auto;
         }
+        .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.left::before {
+  content: " ";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 4px;
+  background-color: #081b29;
+  left: 25px;
+  z-index: -1;
+}
+
+.right::before {
+  content: " ";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 4px;
+  background-color: #081b29;
+  left: -25px;
+  z-index: -1;
+}
+
+h2, p {
+  margin: 0;
+  color: #081b29;
+}
+
     </style>
 </head>
 <body>
@@ -153,5 +208,27 @@
             <button><a href="#">Hire me!</a></button>
         </div>
     </section>
+    <section class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>2024</h2>
+      <p>Launched the first version of my mobile app, reaching 10,000 downloads within the first month.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2023</h2>
+      <p>Attended a major tech conference to share insights on mobile development trends.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2022</h2>
+      <p>Completed a specialized course in advanced mobile UI/UX design.</p>
+    </div>
+  </div>
+  <!-- Add more containers here for each timeline entry -->
+</section>
+
 </body>
 </html>
