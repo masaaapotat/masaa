@@ -4,134 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            background-color: gray;
-        }
-        header {
-            width: calc(100% - 40px);
-            position: sticky;
-            top: 0;
-            left: 0;
-            margin: 20px;
-            padding: 20px;
-            background-color: #081b29;
-            opacity: 0.8;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 100;
-            border-radius: 10px;
-        }
-        a {
-            margin: 5px;
-            color: aliceblue;
-            text-decoration: none;
-        }
-        .logo {
-            font-size: 25px;
-            font-weight: 600;
-        }
-        nav {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-        .navbar a:hover{
-            color: cyan;
-        }
-        .home{
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            padding: 0 10%;
-        }
-        .home-content{
-            max-width: 600px;
-        }
-        .home-content h1{
-            font-size: 56px;
-            font-weight: 700;
-            color: aliceblue;
-        }
-        .home-content h3{
-            font-size: 32px;
-            font-weight: 700;
-            color:#081b29;
-        }
-        .home-content p{
-            font-size: 16px;
-            color: aliceblue;
-        }
-        button{
-            width: 160px;
-            height: 60px;
-            border-radius: 10px;
-            background: transparent;
-            color: aliceblue;
-            font-size: 30px;
-            border: 2px solid #081b29;
-        } 
-        button:hover{
-            background-color: #081b29;
-        }
-        .icons{
-            display: flex;
-            margin: 40px auto 20px;
-            justify-content: center;
-            width: 170px;
-        }
-        .icons a{
-            display: inline-flex;
-            width: 40px;
-            height: 40px;
-            background: transparent;
-            border: 2px solid #081b29;
-            border-radius: 50%;
-            font-size: 20px;
-            color: aqua;
-            text-decoration: none;
-        }
-        img{
-            height: 30px;
-            width: auto;
-            margin: auto;
-        }
-        .hand img{
-            height: 600px;
-            width: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <a href="#" class="logo">MASAA</a>
+        <!-- Logo -->
+        <a href="#" class="logo">BInary wizards</a>
+        <!-- Navigation bar -->
         <nav class="navbar">
-            <a href="#">HOME</a>
+            <a href="index.html">HOME</a>
             <a href="#">ABOUT</a>
-            <a href="#">CONTACT</a>
+            <a href="">PORTFOLIO</a>
         </nav>
     </header>
 
-
+    <!-- Home section -->
     <section class="home">
+        <!-- Home content -->
         <div class="home-content">
-            <h1>Hi my name is Mercy Masaa</h1>
-            <h3>Developer</h3>
+            <!-- Main heading -->
+            <h1>Hi, We are the Binary WIZARDS</h1>
+            <!-- Subheading -->
+            <h3>Developers</h3>
+            <!-- Paragraph -->
             <p>
-                As a passionate and skilled mobile developer, I specialize in crafting intuitive and efficient applications for both Android and iOS platforms.
-                With a keen eye for design and user experience, I leverage the latest technologies to create apps that not only meet but exceed user expectations. 
-                My dedication to continuous learning ensures I stay at the forefront of mobile development trends.
+                As a passionate and skilled mobile developers, we specialize in crafting intuitive and efficient applications for both Android and iOS platforms.
+                With a keen eye for design and user experience, we leverage the latest technologies to create apps that not only meet but exceed user expectations. 
+                Our dedication to continuous learning ensures I stay at the forefront of mobile development trends.
             </p>
-            <button><a href="#">Hire me!</a></button>
+            <!-- Call to action button -->
+            <button><a href="https://www.fiverr.com" target="_blank">Hire me!</a></button>
+            <!-- Social icons -->
             <div class="icons">
-                <a href=""><img src="assets/facebook-f.svg" alt="facebook"></a>
-            <a href=""><img src="assets/instagram.svg" alt=""></a>
-            <a href=""><img src="assets/linkedin-in.svg" alt=""></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="assets/facebook-f.svg" alt="facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="assets/instagram.svg" alt=""></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="assets/linkedin-in.svg" alt=""></a>
             </div>
         </div>
+        <!-- Hand image -->
         <div class="hand">
-            <img src="assets/baki.jpg" alt="">
+            <img src="assets/2ffb007d-1e11-4869-b21c-3906b2b55c5c.jpeg" alt="">
         </div>
     </section>
 </body>
